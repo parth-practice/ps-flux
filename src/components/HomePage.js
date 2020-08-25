@@ -1,4 +1,3 @@
-
 import React from 'react';
 
 function HomePage() {
@@ -6,6 +5,7 @@ function HomePage() {
         <div className="jumbotron">
             <h1>Pluralsight, Administration</h1>
             <p>React, fulx and react router for ultra-responsive web apps.</p>
+            <a href="/about">About</a>
         </div>
     );
 }
