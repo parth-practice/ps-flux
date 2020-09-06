@@ -1,11 +1,14 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 function HomePage() {
   return (
     <div className="jumbotron">
       <h1>Administration</h1>
       <p>React, fulx and react router for ultra-responsive web apps.</p>
-      <a href="/about">About</a>
+      <Link to="/about" className="btn btn-primary">
+        About
+      </Link>
     </div>
   );
 }
