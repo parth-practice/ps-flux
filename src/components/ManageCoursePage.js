@@ -11,9 +11,8 @@ function ManageCoursePage(props) {
     category: "",
   });
 
-  function handleChange(event) {
-    const updatedcopy = { ...course, [event.target.name]: event.target.value };
-    setCourse(updatedcopy);
+  function handleChange({ target }) {
+    setCourse({ ...course, [target.name]: target.value });
   }
 
   return (
