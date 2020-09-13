@@ -12,6 +12,7 @@ function CourseForm(props) {
         label="Title"
         value={props.course.title}
         onChange={props.onChange}
+        error={props.errors.title}
       />
 
       <InputSelector
@@ -21,6 +22,7 @@ function CourseForm(props) {
         onChange={props.onChange}
         value={props.course.authorId || ""}
         className="form-control"
+        error={props.errors.authorId}
         options={[
           { id: "", name: "" },
           { id: "1", name: "Cory House" },
@@ -34,6 +36,7 @@ function CourseForm(props) {
         label="Category"
         onChange={props.onChange}
         value={props.course.category}
+        error={props.errors.category}
       />
 
       <input type="submit" value="Save" className="btn btn-primary" />
