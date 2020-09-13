@@ -5,7 +5,7 @@ import InputSelector from "./common/InputSelector";
 
 function CourseForm(props) {
   return (
-    <form>
+    <form onSubmit={props.onSubmit}>
       <TextInput
         id="title"
         name="title"
